@@ -13,6 +13,8 @@ loc2.sort()
 
 d = sum(abs(l1 - l2) for l1, l2 in zip(loc1, loc2))
 
+# print(d)
+
 ## PART 2
 counts = Counter(loc2)
 
@@ -20,3 +22,5 @@ sim_score = 0
 for loc in loc1:
     if loc in counts:
         sim_score += counts[loc] * loc
+
+# print(sim_score)
