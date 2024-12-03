@@ -11,7 +11,6 @@ sum_muls = sum(int(x) * int(y) for x, y in muls)
 
 # PART 2 
 
-# cmds = re.findall('(mul|do|don\'t)\((?:\d+)(?:,(\d+)\))', mem)
 cmds = re.findall('(do)\(\)|(mul)\((\d+),(\d+)\)?', mem)
-b = re.findall(r'mul\([0-9]+,[0-9]+\)|do\(\)|don\'t\(\)', mem)
+
 do = True 
